@@ -74,8 +74,67 @@ footer{
     }
   }
 }
-
-
+#basicContent{
+  border-bottom: 1px solid lightgrey;
+  div{
+    h3{
+      font-size: 30px;
+    }
+    p{
+      font-size: 12px;
+    }
+  }
+  form{
+    input{
+      margin-bottom: 10px;
+      font-size: 15px;
+    }
+    .submitButton{
+      background-color: #1E6DC7;
+      color: #fff;
+      outline: none;
+      border: none;
+      border-radius: 5px;
+      border: 1px solid #1E6DC7;
+    }
+  }
+}
+.profile{
+  border-bottom: 1px solid lightgrey;
+  padding-bottom: 10px;
+  div{
+    margin-top: 25px;
+    h3{
+      font-size: 30px;
+    }
+    p{
+      font-size: 12px;
+    }
+  }
+  img{
+    max-width: 30%;
+    max-height: 30%;
+    margin-top: 25px;
+    border-radius: 50%;
+  }
+}
+#history{
+  border-bottom: 1px solid lightgrey;
+  div{
+    margin-top: 25px;
+    h3{
+      font-size: 30px;
+    }
+    p{
+      font-size: 12px;
+    }
+    #historyContainer{
+      max-height: 250px;
+      overflow: scroll;
+      margin-bottom: 10px;
+    }
+  }
+}
 @media only screen and (max-width: 800px) {
     body {
         background-color: lightblue;
