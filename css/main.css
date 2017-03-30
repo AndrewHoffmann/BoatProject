@@ -30,6 +30,15 @@ header {
         display: inline-block;
         margin-right: 15px; }
 
+/* Boats page */
+.boatPic {
+  display: inline-block;
+  height: 350px;
+  max-width: 450px; }
+
+.boatDescription {
+  display: inline-block; }
+
 footer div {
   margin: 0 auto;
   text-align: center;
