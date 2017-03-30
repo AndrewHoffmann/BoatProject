@@ -55,6 +55,51 @@ footer div {
     footer div .footerNav :nth-child(6) {
       border-right: none; }
 
+#basicContent {
+  border-bottom: 1px solid lightgrey; }
+  #basicContent div h3 {
+    font-size: 30px; }
+  #basicContent div p {
+    font-size: 12px; }
+  #basicContent form input {
+    margin-bottom: 10px;
+    font-size: 15px; }
+  #basicContent form .submitButton {
+    background-color: #1E6DC7;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid #1E6DC7; }
+
+.profile {
+  border-bottom: 1px solid lightgrey;
+  padding-bottom: 10px; }
+  .profile div {
+    margin-top: 25px; }
+    .profile div h3 {
+      font-size: 30px; }
+    .profile div p {
+      font-size: 12px; }
+  .profile img {
+    max-width: 30%;
+    max-height: 30%;
+    margin-top: 25px;
+    border-radius: 50%; }
+
+#history {
+  border-bottom: 1px solid lightgrey; }
+  #history div {
+    margin-top: 25px; }
+    #history div h3 {
+      font-size: 30px; }
+    #history div p {
+      font-size: 12px; }
+    #history div #historyContainer {
+      max-height: 250px;
+      overflow: scroll;
+      margin-bottom: 10px; }
+
 @media only screen and (max-width: 800px) {
   body {
     background-color: lightblue; }
