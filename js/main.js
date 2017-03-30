@@ -3,7 +3,7 @@
 // Boats Page - Lists my boats for sale. Get blog from api.  Show price, name, picture, description
 // in the API (console log): Object -> boats, boats is an actual array. Need to add ".boats" after "response"
 
-$.ajax({ 
+$.ajax({
 	url: 'https://tiyagencyweek.herokuapp.com/boats',
     success: (response) => {
         console.log(response);
@@ -24,19 +24,33 @@ $.ajax({
     }
 });
 
-// how to convert string to currency - http://stackoverflow.com/questions/149055/how-can-i-format-numbers-as-money-in-javascript 
+// how to convert string to currency - http://stackoverflow.com/questions/149055/how-can-i-format-numbers-as-money-in-javascript
 
 // (from Jake) function
 Number.prototype.formatMoney = function(c, d, t){
-var n = this, 
-    c = isNaN(c = Math.abs(c)) ? 2 : c, 
-    d = d == undefined ? "." : d, 
-    t = t == undefined ? "," : t, 
-    s = n < 0 ? "-" : "", 
-    i = String(parseInt(n = Math.abs(Number(n) || 0).toFixed(c))), 
+var n = this,
+    c = isNaN(c = Math.abs(c)) ? 2 : c,
+    d = d == undefined ? "." : d,
+    t = t == undefined ? "," : t,
+    s = n < 0 ? "-" : "",
+    i = String(parseInt(n = Math.abs(Number(n) || 0).toFixed(c))),
     j = (j = i.length) > 3 ? j % 3 : 0;
    return s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t) + (c ? d + Math.abs(n - i).toFixed(c).slice(2) : "");
  };
 
 // And use it with:
 (123456789.12345).formatMoney(2, '.', ',');
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1}
+    x[slideIndex-1].style.display = "block";
+    setTimeout(carousel, 3000); // Change image every 2 seconds
+}

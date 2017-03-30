@@ -17,7 +17,7 @@ a:hover{
 }
 header{
 
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   .title{
 
     .logo{
@@ -91,6 +91,7 @@ footer{
     }
   }
 }
+
 #basicContent{
   border-bottom: 1px solid lightgrey;
   div{
@@ -152,6 +153,72 @@ footer{
     }
   }
 }
+
+.imgSlider{
+  background-color: rgba(192,192,192,0.2);
+  margin-bottom: 70px;
+  display: block;
+  height: 300px;
+  width: 100%;
+  border-radius: 20%;
+}
+
+.imgSlider2{
+  background-color: rgba(192,192,192,0.6);
+  margin-bottom: 70px;
+  display: block;
+  height: 300px;
+  width: 100%;
+  border-radius: 30%;
+}
+
+.imgSlider3{
+  background-color: rgba(192,192,192,0.9);
+  margin-bottom: 70px;
+  display: block;
+  height: 300px;
+  width: 100%;
+  border-radius: 40%;
+}
+
+.mySlides{
+  max-height: 80%;
+  width: 60%;
+  margin: 0px auto;
+  display: block;
+  margin-top: 30px;
+  border-radius: 15px;
+}
+
+.blogBox{
+
+    p{
+      display: inline-block;
+      vertical-align: top;
+}
+
+.bioBox{
+
+  p{
+    font-size: 18px;
+  }
+}
+
+.blogImgOne{
+  width: 200px;
+  height: 200px;
+}
+
+.blogImgTwo{
+  width: 200px;
+  height: 200px;
+}
+
+.blogImgThree{
+  width: 200px;
+  height: 200px;
+}
+
 @media only screen and (max-width: 800px) {
     body {
         background-color: lightblue;
