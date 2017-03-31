@@ -16,7 +16,7 @@ $.ajax({
 	        				<div class="col-md-6 boatDescription">
 	        					<h1>${boats.name}</h1>
 	        					<h5>${boats.description}</h5>
-	        					<h2>${boats.price}</h2>
+	        					<h2>$${boats.price.formatMoney(2, '.', ',')}</h2>
 					    	</div>
 				    	</div>
 			        `)
@@ -39,7 +39,10 @@ var n = this,
  };
 
 // And use it with:
-(123456789.12345).formatMoney(2, '.', ',');$.ajax({
+//money to be formated.formatMoney(2, '.', ',')
+
+
+$.ajax({
 	url: `http://api.openweathermap.org/data/2.5/forecast/daily?q=47353&cnt=1&units=imperial&APPID=d0458c4189cf033bf80c84d7a0d38ab0`,
 	success:(result)=>{
 		console.log(result)
