@@ -9,14 +9,15 @@ $.ajax({
     success: (response) => {
         	response.boats.forEach((boats) =>{
         			$(".boatsGoHere").append(`
-        				<div class="row">
-	        				<div class="col-md-6 boatPic">
+        				<div class="col-md-6 boatDiv">
+	        				<div class="col-md-12 boatPic">
 	        					<img class="boatPic" src=${boats.picture}>
 	        				</div>
-	        				<div class="col-md-6 boatDescription">
+	        				<div class="col-md-12 boatDescription">
 	        					<h1>${boats.name}</h1>
-	        					<h5>${boats.description}</h5>
-	        					<h2>$${boats.price.formatMoney(2, '.', ',')}</h2>
+	        					<h5 class="col-md-8">${boats.description}</h5>
+	        					<h2 class="col-md-8">$${boats.price.formatMoney(2, '.', ',')}</h2>
+										<button>Schedule a Meeting Today</button>
 					    	</div>
 				    	</div>
 			        `)
@@ -52,3 +53,21 @@ $.ajax({
 			`)
 	}
 })
+
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1};
+		if(x[slideIndex-1])
+		{
+    	x[slideIndex-1].style.display = "block";
+    	setTimeout(carousel, 3000); // Change image every 2 seconds
+		}
+}

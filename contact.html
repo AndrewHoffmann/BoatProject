@@ -7,74 +7,103 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ropa+Sans" rel="stylesheet">    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ropa+Sans" rel="stylesheet">
+    <meta charset="utf-8">
     <title></title>
 </head>
+
 <body>
 
     <header class="row">
-      <div class="col-md-8 offset-md-2 title">
-        <img class="col-md-2 logo img-responsive" src="images/BoatLogo.jpg">
-        <div class="col-md-10">
-          <div class='col-md-5 line'>
-          </div>
-          <h1 class="col-md-7">Max's Boats</h1>
-          <ul class="headerList">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="boats.html">Boats</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="admin.html">Admin</a></li>
-          </ul>
+        <div class="col-md-8 offset-md-2 title">
+            <img class="col-md-2 logo img-responsive" src="http://www.simplicityboats.com/Boatlogo2.gif">
+            <div class="col-md-10">
+                <div class='col-md-5 line'>
+                </div>
+                <h1 class="col-md-7">Max's Boats</h1>
+                <ul class="headerList">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="boats.html">Boats</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a class="active" href="contact.html">Contact</a></li>
+                    <li><a href="admin.html">Admin</a></li>
+                </ul>
+            </div>
         </div>
-      </div>
     </header>
 
     <div class="weather">
     </div>
 
-    <main class="col-md-6 offset-md-3">
-      <div class="col-md-2">
-        <h2>Contact Info</h2>
-        <p>15179 Old State Road 101
-          Liberty, Indiana 47353</p>
-          <p>765-458-6431 (phone)</p>
-          <p>765-458-2435 (fax)</p>
-          <p>GimmeABoat@Gmail.com</p>
-      </div>
-      <div class="col-md-10">
-        <script type="text/javascript" src="https://form.jotform.us/jsform/70874997819177"></script>
-      </div>
+    <main class="col-md-12">
+        <div class="col-md-2 contactInfo">
+            <h2>Contact Info</h2>
+            <p>15179 Old State Road 101 Liberty, Indiana 47353</p>
+            <p>765-458-6431 (phone)</p>
+            <p>765-458-2435 (fax)</p>
+            <p>GimmeABoat@Gmail.com</p>
+        </div>
+        <div class="col-md-4 jotForm">
+            <script type="text/javascript" src="https://form.jotform.us/jsform/70896199229170"></script>
+        </div>
+
+        <div class="col-md-6">
+            <head>
+                <style>
+                    #map {
+                        height: 400px;
+                        width: 100%;
+                    }
+                </style>
+            </head>
+            <h3>Find us here!</h3>
+            <div id="map"></div>
+            <script>
+                function initMap() {
+                    var uluru = {
+                        lat: 39.531781,
+                        lng: -84.994331
+                    };
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                        zoom: 4,
+                        center: uluru
+                    });
+                    var marker = new google.maps.Marker({
+                        position: uluru,
+                        map: map
+                    });
+                }
+            </script>
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyW90Y36KVbWyAjfSBwuEMSeTXrgXF0N0&callback=initMap">
+            </script>
+        </div>
+
     </main>
 
     <footer class="col-md-8 offset-md-2">
-      <div>
-        <ul class="socialIcon col-md-12">
-          <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
-          <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
-          <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
-          <li><i class="fa fa-google-plus" aria-hidden="true"></i></li>
-        </ul>
-        <ul class="footerNav col-md-12">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="boats.html">Boats</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="admin.html">Admin</a></li>
-        </ul>
+        <div>
+            <ul class="socialIcon col-md-12">
+                <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                <li><i class="fa fa-google-plus" aria-hidden="true"></i></li>
+            </ul>
+            <ul class="footerNav col-md-12">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="boats.html">Boats</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
 
-        <p>15179 Old State Road 101
-          Liberty, Indiana 473553
-          <br>
-          765-458-6431 (phone)
-          765-458-2435 (fax)
-          GimmieABoat@Gmail.com
-        </p>
+            <p>15179 Old State Road 101 Liberty, Indiana 473553
+                <br> 765-458-6431 (phone) 765-458-2435 (fax) GimmieABoat@Gmail.com
+            </p>
 
-        <p>Big Giant Heads Developers<i class="fa fa-copyright" aria-hidden="true"></i></p>
-      </div>
+            <p>Big Giant Heads Developers<i class="fa fa-copyright" aria-hidden="true"></i></p>
+        </div>
     </footer>
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.js"></script>
