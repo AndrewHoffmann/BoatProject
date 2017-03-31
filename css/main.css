@@ -64,7 +64,6 @@ footer div {
     footer div .footerNav :nth-child(6) {
       border-right: none; }
 
-<<<<<<< HEAD
 #basicContent {
   border-bottom: 1px solid lightgrey; }
   #basicContent div h3 {
@@ -109,7 +108,7 @@ footer div {
       max-height: 250px;
       overflow: scroll;
       margin-bottom: 10px; }
-=======
+
 .imgSlider {
   background-color: rgba(192, 192, 192, 0.2);
   margin-bottom: 70px;
@@ -144,8 +143,7 @@ footer div {
 
 .blogBox p {
   display: inline-block;
-  vertical-align: top;
-  margin-bottom: 1000px; }
+  vertical-align: top; }
 
 .bioBox p {
   font-size: 18px; }
@@ -161,7 +159,32 @@ footer div {
 .blogImgThree {
   width: 200px;
   height: 200px; }
->>>>>>> f10f63251bfbaa256ca7025dcd3bf434381837a9
+
+.blogTitle {
+  font-size: 26px;
+  margin-bottom: 10px;
+  border-radius: 5px; }
+
+.blogInput {
+  font-size: 16px; }
+
+.blogSubmit {
+  color: white;
+  background-color: #1E6DC7;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 1px solid #1E6DC7; }
+
+.containerBlog {
+  margin-bottom: 50px; }
+
+.content {
+  margin-top: 30px; }
+
+.weather {
+  position: absolute;
+  top: 0;
+  right: 0; }
 
 @media only screen and (max-width: 800px) {
   body {

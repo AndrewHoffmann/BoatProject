@@ -197,6 +197,7 @@ footer{
       vertical-align: top;
 }
 
+}
 .bioBox{
 
   p{
@@ -217,6 +218,37 @@ footer{
 .blogImgThree{
   width: 200px;
   height: 200px;
+}
+
+.blogTitle{
+  font-size: 26px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.blogInput{
+  font-size: 16px;
+}
+.blogSubmit{
+  color:white;
+  background-color: #1E6DC7;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 1px solid #1E6DC7;
+}
+
+.containerBlog{
+  margin-bottom: 50px;
+}
+
+.content{
+  margin-top: 30px;
+}
+
+.weather {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 @media only screen and (max-width: 800px) {
